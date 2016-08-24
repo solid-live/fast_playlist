@@ -171,7 +171,7 @@
 
 
 
-  function savePlaylist(code, name){
+  function saveToSolid(code, name){
 
     function putFile(file, data) {
       var xhr = new XMLHttpRequest();
@@ -223,7 +223,7 @@
 
     if(e.keyCode == 83 && (e.ctrlKey || e.metaKey)) {
       console.log('saving')
-      e.shiftKey ? showMenu() : savePlaylist()
+      saveToSolid()
 
       e.preventDefault()
       return false
