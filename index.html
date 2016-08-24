@@ -188,7 +188,7 @@
       for (var i = 0; i < playlist.length; i++) {
         var p = playlist[i]
         data += '<> <http://www.w3.org/ns/ldp#contains> "'+ p.id.videoId +'" .\n'
-        data += '<' + p.id.videoId + '> <http://www.w3.org/ns/posix/stat#mtime> ' + i + ' .'
+        data += '<' + p.id.videoId + '> <http://www.w3.org/ns/posix/stat#mtime> ' + i + ' .\n'
       }
       console.log(data)
 
